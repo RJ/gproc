@@ -29,7 +29,7 @@ all: compile
 check: compile dialyzer
 
 compile:
-	rebar compile
+	rebar get-deps && rebar compile
 
 
 clean:
